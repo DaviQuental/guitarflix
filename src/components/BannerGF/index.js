@@ -1,22 +1,22 @@
 import styled from 'styled-components';
 import container from '../../styles/tools/container';
-import TagQD from '../TagQD';
-import TitleQD from '../TitleQD';
+import TagGF from '../TagGF';
+import TitleGF from '../TitleGF';
 
 export const Text = styled.div`
     max-width: 45%;
     padding-top: 10rem;
 
-    ${TagQD} {
+    ${TagGF} {
         margin-bottom: 40rem;
     }
 
-    ${TitleQD} {
+    ${TitleGF} {
         margin-bottom: 15rem;
     }
 `;
 
-export const BannerQD = styled.section`
+export const BannerGF = styled.section`
     ${container}
     display: flex;
     align-items: center;

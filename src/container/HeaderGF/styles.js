@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import ButtonQD from '../../components/ButtonQD/index';
+import ButtonGF from '../../components/ButtonGF/index';
 import container from '../../styles/tools/container';
 
 export const Header = styled.header`
@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
             justify-content: center;
         }
 
-        & > ${ButtonQD} {
+        & > ${ButtonGF} {
             background-color: var(--color-medium-blue);
             border-radius: 0;
             border: none;

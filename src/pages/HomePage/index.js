@@ -1,14 +1,14 @@
 import React from 'react';
 
-import HeaderQD from '../../container/HeaderQD';
-import FooterQD from '../../container/FooterQD';
-import MainQD from '../../container/MainQD';
+import HeaderGF from '../../container/HeaderGF';
+import FooterGF from '../../container/FooterGF';
+import MainGF from '../../container/MainGF';
 
 const HomePage = () => (
     <>
-        <HeaderQD />
-        <MainQD />
-        <FooterQD />
+        <HeaderGF />
+        <MainGF />
+        <FooterGF />
     </>
 );
 

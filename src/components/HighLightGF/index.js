@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const HighLightQD = styled.strong`
+const HighLightGF = styled.strong`
     font-weight: bold;
 `;
 
-export default HighLightQD;
+export default HighLightGF;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import LogoQD from '../../components/LogoQD';
+import LogoGF from '../../components/LogoGF';
 
 const Footer = styled.footer`
     display: flex;
@@ -11,7 +11,7 @@ const Footer = styled.footer`
     font-size: 16rem;
     border-top: 3px solid var(--color-medium-blue);
 
-    & > ${LogoQD} {
+    & > ${LogoGF} {
         margin-bottom: 20rem;
     }
 `;

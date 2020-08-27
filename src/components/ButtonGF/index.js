@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ButtonQD = styled.button`
+const ButtonGF = styled.button`
     padding: 18rem 40rem;
     background-color: var(--dark-color);
     border: 1rem solid var(--light-color);
@@ -12,4 +12,4 @@ const ButtonQD = styled.button`
     }
 `;
 
-export default ButtonQD;
+export default ButtonGF;

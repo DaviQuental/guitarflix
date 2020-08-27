@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const TagQD = styled.h2`
+const TagGF = styled.h2`
     display: inline-block;
     color: var(--color-light-gray);
     font-size: 50rem;
@@ -9,4 +9,4 @@ const TagQD = styled.h2`
     background-color: var(--color-light-blue);
 `;
 
-export default TagQD;
+export default TagGF;
