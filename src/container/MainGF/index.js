@@ -3,15 +3,11 @@ import React from 'react'
 /* COMPONENTS */
 import Main from './styles'
 import { BannerGF, Text } from '../../components/BannerGF';
+import ThumbGF from '../../components/ThumbGF/index';
 import TagGF from '../../components/TagGF';
 import TitleGF from '../../components/TitleGF';
 import DescriptionGF from '../../components/DescriptionGF';
-import ThumbGF from '../../components/ThumbGF';
-
-/* ASSETS */
-import neon from '../../assets/img/john-neon.jpg'
-import cifraclub from '../../assets/img/cifraclub.jpg'
-
+import { mainThumb } from '../../data/thumbData';
 
 const MainGF = () => (
     <Main>
@@ -21,13 +17,7 @@ const MainGF = () => (
                 <TitleGF>Aprenda a tocar !</TitleGF>
                 <DescriptionGF>Neste vídeo, o músico Leo Eymard ensina a tocar uma música cheia de detalhes e desafios ! Aprenda a tocá-la e chame atenção de todos ! </DescriptionGF>
             </Text>
-            <ThumbGF
-                src={neon}
-                alt='Foto de capa: John Mayer - Neon'
-                imageChannel={cifraclub}
-                altChannel='Cifraclub'
-                title='Neon - John Mayer (aula de violão)'
-            />
+            <ThumbGF src={mainThumb.src} alt={mainThumb.alt} imageChannel={mainThumb.imageChannel} altChannel={mainThumb.altChannel} title={mainThumb.title} href={mainThumb.href} />
         </BannerGF>
     </Main>
 );
