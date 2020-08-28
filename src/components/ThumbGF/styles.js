@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PlayButtonGF from '../PlayButtonGF';
 
 export const ImageChannel = styled.img`
     position: absolute;
@@ -38,6 +39,12 @@ export const ThumbWrapper = styled.figure`
     cursor: pointer;
     transition: scale 200ms linear;
 
+    & > ${PlayButtonGF} {
+        position: absolute;
+        left: 45%;
+        top: 45%;
+    }
+
     &:hover {
         scale: 1.1;
         & > ${ImageChannel}{
@@ -50,6 +57,19 @@ export const ThumbWrapper = styled.figure`
             opacity: 1;
             transform: translateX(0);
             transition: transform 100ms 175ms linear, opacity 300ms 175ms linear;
+        }
+
+        & > ${PlayButtonGF} {
+            opacity: 1;
+            transition: opacity 200ms 175ms linear, scale 200ms 175ms linear;
+        }
+    }
+
+    &:active {
+        & > ${PlayButtonGF} {
+            scale: 1.5;
+            background-color: var(--dark-color);
+            transition: scale 150ms linear;
         }
     }
 
