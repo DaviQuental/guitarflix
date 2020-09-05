@@ -8,6 +8,10 @@ import TagGF from '../../components/TagGF';
 import TitleGF from '../../components/TitleGF';
 import DescriptionGF from '../../components/DescriptionGF';
 import { mainThumb } from '../../data/thumbData';
+import RollerGF from '../../components/RollerGF/index';
+
+/*VAR IMPORT*/
+import { learnMusic, learnedMusic } from '../../data/thumbData';
 
 const MainGF = () => (
     <Main>
@@ -19,6 +23,8 @@ const MainGF = () => (
             </Text>
             <ThumbGF src={mainThumb.src} alt={mainThumb.alt} imageChannel={mainThumb.imageChannel} altChannel={mainThumb.altChannel} title={mainThumb.title} href={mainThumb.href} />
         </BannerGF>
+        <RollerGF title={"Musicas para aprender"} varMap={learnMusic} />
+        <RollerGF title={"Musicas aprendidas"} varMap={learnedMusic} />
     </Main>
 );
 
