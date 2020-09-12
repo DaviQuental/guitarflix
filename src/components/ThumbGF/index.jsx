@@ -1,14 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import {
-  ThumbWrapper, Thumb, ImageChannel, ThumbTitle,
-} from './styles';
-import PlayButtonGF from '../PlayButtonGF';
+import { ThumbWrapper, Thumb, ImageChannel, ThumbTitle } from "./styles";
+import PlayButtonGF from "../PlayButtonGF";
 
-const ThumbGF = ({
-  src, alt, imageChannel, altChannel, title, href,
-}) => (
+const ThumbGF = ({ src, alt, imageChannel, altChannel, title, href }) => (
   <ThumbWrapper as="a" href={href} target="_blank">
     <Thumb src={src} alt={alt} />
     <ImageChannel src={imageChannel} alt={altChannel} />

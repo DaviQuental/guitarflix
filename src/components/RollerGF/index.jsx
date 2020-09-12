@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import ThumbGF from '../ThumbGF/index';
-import { RollerWrapper, RollerVideos, RollerDescription } from './styles';
+import ThumbGF from "../ThumbGF/index";
+import { RollerWrapper, RollerVideos, RollerDescription } from "./styles";
 
 const RollerGF = ({ title, varMap }) => (
   <RollerWrapper>
