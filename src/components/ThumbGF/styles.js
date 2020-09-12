@@ -91,4 +91,3 @@ export const ThumbWrapper = styled.figure`
     }
 
 `;
-

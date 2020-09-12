@@ -24,4 +24,3 @@ export const BannerGF = styled.section`
     max-height: 70vh;
     height: 100vh;
 `;
-

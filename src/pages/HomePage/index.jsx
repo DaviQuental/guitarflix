@@ -5,11 +5,11 @@ import FooterGF from '../../container/FooterGF';
 import MainGF from '../../container/MainGF';
 
 const HomePage = () => (
-    <>
-        <HeaderGF />
-        <MainGF />
-        <FooterGF />
-    </>
+  <>
+    <HeaderGF />
+    <MainGF />
+    <FooterGF />
+  </>
 );
 
 export default HomePage;

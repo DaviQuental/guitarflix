@@ -9,6 +9,8 @@ export const RollerWrapper = styled.section`
     flex-direction: column;
     justify-content: flex-start;
     background-color: rgba(0,0,0,0.5);
+    padding: 20rem;
+    overflow-x: auto;
 `;
 
 export const RollerDescription = styled.p`
@@ -20,7 +22,8 @@ export const RollerVideos = styled.div`
     display: flex;
 
     & > ${ThumbWrapper} {
-        width: 300rem;
+        max-width: 300rem;
+        min-width: 300rem;
         margin: 10rem;
     }
 

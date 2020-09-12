@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const PlayButtonGF = styled.span.attrs(props => ({ className: 'fas fa-play-circle' }))`
+const PlayButtonGF = styled.span.attrs(() => ({ className: 'fas fa-play-circle' }))`
     font-size: 50rem;
     color: var(--color-light-blue);
     background-color: var(--light-color);
