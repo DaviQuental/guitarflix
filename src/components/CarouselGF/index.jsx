@@ -2,12 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import ThumbGF from "../ThumbGF/index";
-import { RollerWrapper, RollerVideos, RollerDescription } from "./styles";
+import { CarouselWrapper, CarouselVideos, Right } from "./styles";
 
-const RollerGF = ({ title, varMap }) => (
-  <RollerWrapper>
-    <RollerDescription>{title}</RollerDescription>
-    <RollerVideos>
+const CarouselGF = ({ varMap }) => (
+  <CarouselWrapper>
+    <CarouselVideos>
       {varMap.map((info) => (
         <ThumbGF
           src={info.src}
@@ -18,13 +17,13 @@ const RollerGF = ({ title, varMap }) => (
           href={info.href}
         />
       ))}
-    </RollerVideos>
-  </RollerWrapper>
+    </CarouselVideos>
+    <Right />
+  </CarouselWrapper>
 );
 
-RollerGF.propTypes = {
-  title: PropTypes.string.isRequired,
+CarouselGF.propTypes = {
   varMap: PropTypes.string.isRequired,
 };
 
-export default RollerGF;
+export default CarouselGF;
