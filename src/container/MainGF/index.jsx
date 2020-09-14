@@ -33,8 +33,10 @@ const MainGF = () => (
         href={mainThumb.href}
       />
     </BannerGF>
+    <TagGF small>Musicas para aprender</TagGF>
+    <CarouselGF varMap={learnedMusic} />
+    <TagGF small>Musicas aprendidas</TagGF>
     <CarouselGF title="Musicas para aprender" varMap={learnMusic} />
-    <CarouselGF title="Musicas aprendidas" varMap={learnedMusic} />
   </Main>
 );
 
