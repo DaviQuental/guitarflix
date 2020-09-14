@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const TagGF = styled.h2`
   display: inline-block;
@@ -7,6 +7,16 @@ const TagGF = styled.h2`
   padding: 20rem 18rem;
   border-radius: 4rem;
   background-color: var(--color-light-blue);
+
+  ${({ small, medium }) =>
+    (small &&
+      css`
+        font-size: 15rem;
+      `) ||
+    (medium &&
+      css`
+        font-size: 35rem;
+      `)}
 `;
 
 export default TagGF;
