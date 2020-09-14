@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import container from "../../styles/tools/container";
 import TagGF from "../TagGF";
 import TitleGF from "../TitleGF";
@@ -21,6 +22,5 @@ export const BannerGF = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-height: 70vh;
   height: 100vh;
 `;
