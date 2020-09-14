@@ -8,7 +8,7 @@ import ThumbGF from "../../components/ThumbGF/index";
 import TagGF from "../../components/TagGF";
 import TitleGF from "../../components/TitleGF";
 import DescriptionGF from "../../components/DescriptionGF";
-import RollerGF from "../../components/RollerGF/index";
+import CarouselGF from "../../components/CarouselGF/index";
 
 /* VAR IMPORT */
 import { learnMusic, learnedMusic, mainThumb } from "../../data/thumbData";
@@ -21,7 +21,7 @@ const MainGF = () => (
         <TitleGF>Aprenda a tocar !</TitleGF>
         <DescriptionGF>
           Neste vídeo, o músico Leo Eymard ensina a tocar uma música cheia de
-          detalhes e desafios ! Aprenda a tocá-la e chame atenção de todos !{" "}
+          detalhes e desafios ! Aprenda a tocá-la e chame atenção de todos !
         </DescriptionGF>
       </Text>
       <ThumbGF
@@ -33,8 +33,8 @@ const MainGF = () => (
         href={mainThumb.href}
       />
     </BannerGF>
-    <RollerGF title="Musicas para aprender" varMap={learnMusic} />
-    <RollerGF title="Musicas aprendidas" varMap={learnedMusic} />
+    <CarouselGF title="Musicas para aprender" varMap={learnMusic} />
+    <CarouselGF title="Musicas aprendidas" varMap={learnedMusic} />
   </Main>
 );
 
