@@ -1,22 +1,22 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { ThumbWrapper } from "../ThumbGF/styles";
-import container from "../../styles/tools/container";
 import arrow from "../../assets/img/arrow.svg";
 
-export const Right = styled.button`
+const Arrow = css`
   position: absolute;
   border: none;
   height: calc(100% - 40rem);
   width: 50rem;
-  right: 0;
   background-color: var(--color-medium-blue);
   opacity: 0;
   cursor: pointer;
   transition: opacity 200ms linear, transform 200ms linear;
+  z-index: 1;
 
   &::after {
     content: url(${arrow});
+    display: inline-block;
   }
 
   &:hover {
@@ -28,8 +28,25 @@ export const Right = styled.button`
   }
 `;
 
+export const Right = styled.button`
+  ${Arrow}
+  right: 0;
+`;
+
+export const Left = styled.button`
+  ${Arrow}
+  left: 0;
+
+  &::after {
+    transform-origin: center;
+    transform: rotate(180deg);
+  }
+`;
+
 export const CarouselWrapper = styled.section`
-  ${container}
+  --thumb-width: 300rem;
+  --margin-all-direction: 10rem;
+  --padding-container: 16rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -40,17 +57,51 @@ export const CarouselWrapper = styled.section`
   overflow: hidden;
 
   &:hover > ${Right} {
-    opacity: 0.8;
+    ${({ rightShow }) =>
+      rightShow
+        ? css`
+            visibility: visible;
+            opacity: 0.8;
+          `
+        : css`
+            visibility: hidden;
+            opacity: 0;
+          `}
+  }
+  &:hover > ${Left} {
+    ${({ leftShow }) =>
+      leftShow
+        ? css`
+            visibility: visible;
+            opacity: 0.8;
+          `
+        : css`
+            visibility: hidden;
+            opacity: 0;
+          `}
   }
 `;
 
 export const CarouselVideos = styled.div`
   display: flex;
+  transition: transform 250ms linear;
+
+  ${({ move }) =>
+    css`
+      transform: translateX(
+        calc(
+          (
+              var(--thumb-width) + var(--margin-all-direction) +
+                var(--padding-container)
+            ) * ${move}
+        )
+      );
+    `}
 
   & > ${ThumbWrapper} {
-    max-width: 300rem;
-    min-width: 300rem;
-    margin: 10rem;
+    max-width: var(--thumb-width);
+    min-width: var(--thumb-width);
+    margin: var(--margin-all-direction);
   }
 
   & > ${ThumbWrapper}:first-child {
