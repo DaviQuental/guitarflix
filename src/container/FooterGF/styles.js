@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import LinkGF from "../../components/LinkGF";
 import LogoGF from "../../components/LogoGF";
 
 const Footer = styled.footer`
@@ -13,6 +14,9 @@ const Footer = styled.footer`
 
   & > ${LogoGF} {
     margin-bottom: 20rem;
+  }
+  & ${LinkGF} {
+    margin-left: 5rem;
   }
 `;
 
