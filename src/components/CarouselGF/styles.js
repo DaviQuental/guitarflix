@@ -49,12 +49,11 @@ export const CarouselWrapper = styled.section`
   --padding-container: 16rem;
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   padding: 20rem;
   overflow: hidden;
+  width: 100%;
 
   &:hover > ${Right} {
     ${({ rightShow }) =>
