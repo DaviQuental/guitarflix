@@ -49,10 +49,6 @@ export const CarouselWrapper = styled.section`
   --padding-container: 16rem;
   position: relative;
   display: flex;
-<<<<<<< HEAD
-=======
-  background-color: rgba(0, 0, 0, 0.5);
->>>>>>> cc917d782e28ecf64dd14223708630754d976894
   box-sizing: border-box;
   padding: 20rem;
   overflow: hidden;
