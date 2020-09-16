@@ -10,7 +10,8 @@ const Footer = styled.footer`
   background-color: var(--dark-color);
   color: var(--light-color);
   font-size: 16rem;
-  border-top: 3px solid var(--color-medium-blue);
+  border-top: 3px solid var(--primary-medium-color);
+  margin-top: 20rem;
 
   & > ${LogoGF} {
     margin-bottom: 20rem;

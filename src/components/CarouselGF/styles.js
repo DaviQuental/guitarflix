@@ -8,7 +8,7 @@ const Arrow = css`
   border: none;
   height: calc(100% - 40rem);
   width: 50rem;
-  background-color: var(--color-medium-blue);
+  background-color: var(--primary-light-color);
   opacity: 0;
   cursor: pointer;
   transition: opacity 200ms linear, transform 200ms linear;
@@ -49,12 +49,10 @@ export const CarouselWrapper = styled.section`
   --padding-container: 16rem;
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   padding: 20rem;
   overflow: hidden;
+  width: 100%;
 
   &:hover > ${Right} {
     ${({ rightShow }) =>

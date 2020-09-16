@@ -4,9 +4,9 @@ import ButtonGF from "../../components/ButtonGF/index";
 import container from "../../styles/tools/container";
 
 export const Header = styled.header`
-  background-color: #000000;
+  background-color: var(--dark-color);
   padding: 15rem 40rem;
-  border-bottom: 3px solid var(--color-medium-blue);
+  border-bottom: 3px solid var(--primary-medium-color);
 
   @media (max-width: 800px) {
     padding: 15rem 16rem;
@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
     }
 
     & > ${ButtonGF} {
-      background-color: var(--color-medium-blue);
+      background-color: var(--primary-medium-color);
       border-radius: 0;
       border: none;
       position: fixed;

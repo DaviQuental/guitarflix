@@ -12,6 +12,7 @@ import CarouselGF from "../../components/CarouselGF/index";
 
 /* VAR IMPORT */
 import { learnMusic, learnedMusic, mainThumb } from "../../data/thumbData";
+import SectionGF from "../../components/SectionGF";
 
 const MainGF = () => (
   <Main>
@@ -33,10 +34,19 @@ const MainGF = () => (
         href={mainThumb.href}
       />
     </BannerGF>
-    <TagGF small>Musicas para aprender</TagGF>
-    <CarouselGF varMap={learnedMusic} />
-    <TagGF small>Musicas aprendidas</TagGF>
-    <CarouselGF title="Musicas para aprender" varMap={learnMusic} />
+    <SectionGF>
+      <TagGF medium>Músicas para tocar </TagGF>
+      <DescriptionGF>
+        GuitarFlix é um projeto voltado para quem está querendo aprender a tocar
+        violão, assim como eu. Todas as músicas podem ser facilmente aprendidas,
+        desde que se tenha dedicação ! Aqui serão recomendadas diversas músicas
+        e também mostrarei as que eu mesmo já aprendi !
+      </DescriptionGF>
+      <TagGF small>Musicas para aprender</TagGF>
+      <CarouselGF title="Musicas para aprender" varMap={learnMusic} />
+      <TagGF small>Musicas aprendidas</TagGF>
+      <CarouselGF varMap={learnedMusic} />
+    </SectionGF>
   </Main>
 );
 

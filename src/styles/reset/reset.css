@@ -104,11 +104,11 @@ html,
 body {
   font-size: 1px;
   min-width: 320px;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
   background-color: var(--dark-color);
-  font-family: "Roboto", sans-serif;
   line-height: 1;
 }
 ol,

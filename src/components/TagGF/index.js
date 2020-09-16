@@ -6,16 +6,17 @@ const TagGF = styled.h2`
   font-size: 50rem;
   padding: 20rem 18rem;
   border-radius: 4rem;
-  background-color: var(--color-light-blue);
+  background-color: #db8544;
+  font-weight: 600;
 
   ${({ small, medium }) =>
     (small &&
       css`
-        font-size: 15rem;
+        font-size: 20rem;
       `) ||
     (medium &&
       css`
-        font-size: 35rem;
+        font-size: 40rem;
       `)}
 `;
 

@@ -4,7 +4,7 @@ const PlayButtonGF = styled.span.attrs(() => ({
   className: "fas fa-play-circle",
 }))`
   font-size: 50rem;
-  color: var(--color-light-blue);
+  color: var(--primary-light-color);
   background-color: var(--light-color);
   border-radius: 50%;
   opacity: 0;

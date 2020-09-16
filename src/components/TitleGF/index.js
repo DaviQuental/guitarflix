@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const TitleGF = styled.h1`
-  font-size: 40rem;
+  font-size: 45rem;
   color: var(--color-light-gray);
 `;
 

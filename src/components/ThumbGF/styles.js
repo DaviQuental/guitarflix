@@ -8,7 +8,7 @@ export const ImageChannel = styled.img`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid var(--color-medium-blue);
+  border: 2px solid var(--primary-light-color);
   transform: translateX(calc((100% + var(--space)) * -1));
   opacity: 0;
   transition: transform 200ms linear, opacity 100ms linear;
@@ -34,10 +34,10 @@ export const ThumbWrapper = styled.figure`
   width: 640px;
   position: relative;
   border-radius: 4rem;
-  border: 2rem solid var(--color-medium-blue);
+  border: 2rem solid var(--primary-medium-color);
   overflow: hidden;
   cursor: pointer;
-  transition: scale 200ms linear;
+  transition: scale 200ms cubic-bezier(0, 0, 0.48, 2.2);
 
   & > ${PlayButtonGF} {
     position: absolute;
@@ -66,6 +66,7 @@ export const ThumbWrapper = styled.figure`
   }
 
   &:active {
+    transition: scale 150ms cubic-bezier(0, 0, 0.48, 2.2);
     & > ${PlayButtonGF} {
       scale: 1.5;
       background-color: var(--dark-color);
